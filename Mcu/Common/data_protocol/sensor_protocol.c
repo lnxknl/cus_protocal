@@ -2,7 +2,7 @@
 
 
 uint8_t GasType;
-SensorProtocol Protocol;
+SensorProtocol Protocol;// @NOTE 
 
 
 void SetSensorType(uint8_t Type)

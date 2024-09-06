@@ -43,7 +43,7 @@ void DefaultTask(void *pdata)
                     Status = 0;
                     memset(ProcolBuf, 0, sizeof(ProcolBuf));
                     SetSensorType(BEARPI_BH750_SENSOR);
-                    SensorProcolPacket(SensorGetType(), Lux);
+                    SensorProcolPacket(SensorGetType(), Lux);  // @NOTE
                     memcpy(ProcolBuf, &Protocol, sizeof(SensorProtocol));
 										for(int i = 0; i < sizeof(ProcolBuf) / sizeof(ProcolBuf[0]); i++)
 											UartSendByte(ProcolBuf[i]);

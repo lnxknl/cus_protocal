@@ -8,7 +8,7 @@ extern "C" {
 #include <stdint.h>
 	
 	
-typedef struct SensorProtocol
+typedef struct SensorProtocol// @NOTE 
 {
 	uint8_t  FrameHeader;	    //帧头 Byte
 	uint8_t  Length;					//数据长度
